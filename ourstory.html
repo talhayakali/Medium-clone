@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            background-color: #242424 !important;
+        }
+    </style>
+</head>
+
+<body class=>
+    <nav class="navbar navbar-expand-lg border-bottom border-light overflow-hidden">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder fs-3 text-light mx-3" href="index.html">Medium</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="btn btn-dark ms-auto btn-sm rounded-pill text-center border-light mx-3"
+                    data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Sign in </button>
+                <button class="btn btn-light btn-sm rounded-pill text-center" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Sign up </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="container-fluid text-light mt-5">
+        <div class="row">
+            <div class="col-sm-4 mt-5 mx-3">
+                <h1 style="font-size: 3rem;">Everyone has a <br>story to tell</h1>
+                <p class="mt-5">Medium is a home for human stories and ideas. Here, anyone can share knowledge and
+                    wisdom with the world—without having to build a mailing list or a following first. The internet is
+                    noisy and chaotic; Medium is quiet yet full of insight. It’s simple, beautiful, collaborative, and
+                    helps you find the right readers for whatever you have to say.</p>
+                <br>
+                <h2 class="lead fw-normal bg-secondary d-inline">Ultimately, our goal is to deepen our collective
+                    understanding of the world through the power of writing.</h2>
+                <p class="mt-5">We believe that what you read and write matters. Words can divide or empower us, inspire
+                    or discourage us. In a world where the most sensational and surface-level stories often win, we’re
+                    building a system that rewards depth, nuance, and time well spent. A space for thoughtful
+                    conversation more than drive-by takes, and substance over packaging. <br><br>Over 100 million people
+                    connect and share their wisdom on Medium every month. They’re software developers, amateur
+                    novelists, product designers, CEOs, and anyone burning with a story they need to get out into the
+                    world. They write about what they’re working on, what’s keeping them up at night, what they’ve lived
+                    through, and what they’ve learned that the rest of us might want to know too. <br><br>Instead of
+                    selling ads or selling your data, we’re supported by a growing community of over a million Medium
+                    members who believe in our mission. If you’re new here, start reading. Dive deeper into whatever
+                    matters to you. Find a post that helps you learn something new, or reconsider something familiar—and
+                    then write your story.</p>
+            </div>
+        </div>
+    </div>
+    <!-- hero section end -->
+    <div class="row g-0">
+        <div class="col-sm-12 p-5 overflow-hidden"></div>
+    </div>
+    <div class="row text-light py-3 g-0 mb-0">
+        <div class="bg-dark col-sm-12"> <a href="#"
+                class="custom-hover-link text-decoration-none text-light d-block py-5 border-bottom border-secondary border-top"
+                data-bs-toggle="modal" data-bs-target="#loginModal">
+                <h1 class="m-0 mx-3">Start reading</h1>
+            </a>
+
+            <a href="#"
+                class="custom-hover-link text-decoration-none text-light d-block py-5 border-bottom border-secondary"
+                data-bs-toggle="modal" data-bs-target="#loginModal">
+                <h1 class="m-0 mx-3">Start writing</h1>
+            </a>
+
+            <a href="membership.html" class="custom-hover-link text-decoration-none text-light d-block py-5">
+                <h1 class="m-0 mx-3">Become a member</h1>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-light">
+        <footer class="py-3 d-flex" style="margin-top: -16px;">
+            <a class="navbar-brand fw-bolder fs-3 mx-3" href="index.html">Medium</a>
+            <ul class="nav justify-content-center align-items-center ms-auto" style="font-size: 10px;">
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">About</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Terms</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Privacy</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Help</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Teams</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Press</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- footer end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 text-center border-0 shadow-lg" style="border-radius: 15px;">
+
+                <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h2 class="fw-serif mb-5 mt-3">Welcome back.</h2>
+
+                    <div class="d-grid gap-3 mx-auto" style="max-width: 320px;">
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-google me-3 text-danger"></i> Sign in with Google
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-facebook me-3 text-primary"></i> Sign in with Facebook
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-apple me-3"></i> Sign in with Apple
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-x-twitter me-3"></i> Sign in with X
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fa-regular fa-envelope me-3"></i> Sign in with email
+                        </button>
+
+                    </div>
+
+                    <p class="mt-5 small text-muted">
+                        No account? <a href="#" class="text-success fw-bold text-decoration-none">Create one</a>
+                    </p>
+                    <p class="small text-muted mt-2">
+                        Forgot email or trouble signing in? <a href="#" class="text-secondary text-decoration-none">Get
+                            help</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

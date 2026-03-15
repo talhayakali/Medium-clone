@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light border-bottom border-dark"
+        style="background-color: #ffffff;">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand fw-bold fs-4 mx-1 p-md-3">Medium</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav fw-normal ms-auto mx-3 gap-2">
+                    <button class="btn btn-light btn-sm rounded-pill text-center border-bottom border-dark"
+                        data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Sign in </button>
+                    <button class="btn btn-dark btn-sm rounded-pill text-center" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Sign up </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div class="container-fluid d-flex flex-column p-0 overflow-hidden" style="min-height: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-9 col-12 last-content d-flex flex-column justify-content-center p-3 p-sm-4">
+                <h1 class="my-2 fw-normal" style="font-family: serif; font-size: 3.5rem;">Support human stories</h1>
+                <br><br><br><br><br>
+                <p class="my-5" style="max-width: 400px;">Become a member to read without limits or ads, fund great
+                    writers,
+                    and join a global community of people who care about high-quality storytelling.</p>
+                <div class="gap-3 d-flex">
+                    <button class="btn btn-dark btn-sm rounded-pill text-center" style="width: 100px;"
+                        data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Get Started
+                    </button>
+                    <button class="btn btn-light btn-sm rounded-pill text-center border border-dark"
+                        style="width: 100px;" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        View Plans
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-3 col-12 bg-info bg-opacity-25 border border-dark border-opacity-10">
+                <div class="story-card shadow-sm">
+                    <div class="image-container">
+                        <img src="https://picsum.photos/id/34/500/400" alt="Post Image" class="masked-image">
+                    </div>
+
+                    <div class="p-4 content-area">
+                        <span class="badge rounded-pill bg-warning text-dark px-3 py-2 mb-3">✦
+                            Member-only story</span>
+                        <h3 class=" fw-bold" style="font-family: serif;">Storytelling with Design: How to
+                            persuade your team with narrative</h3>
+
+                        <div class="d-flex align-items-center mb-3 mt-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL60p-Cv5yRHtLK2z80SyuAFy8Qskexvs0AQ&s"
+                                class="rounded-circle me-3" width="45" height="45">
+                            <div>
+                                <p class="fw-bold m-0 small">Kai Wong</p>
+                                <p class="text-muted m-0 small">Author of Data-Informed UX Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel-->
+
+    <!-- content -->
+    <div class="container-fluid px-3 border-top border-bottom border-dark border-opacity-75 bg-white">
+        <div class="row">
+
+            <!-- STICKY LEFT -->
+            <div class="col-12 col-sm-4">
+                <div class="sticky-top py-5 ps-3 sticky-text">
+                    <h2 class="fw-normal" style="font-family: serif; font-size: clamp(1.8rem, 3vw, 3.2rem);">Why
+                        Membership?</h2>
+                    <hr class="border-2 border-dark d-block d-md-none">
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-sm-8 col-12">
+
+                <div class="py-5 border-bottom ps-3">
+                    <h3 class="fw-normal mb-3" style="font-family: serif;font-size: clamp(1.4rem, 2.5vw, 2.5rem);">
+                        Reward writers
+                    </h3>
+                    <p class="text-dark fw-normal" style="font-size: larger;">Your membership directly supports the
+                        writers, editors, curators,
+                        and teams who make Medium a vibrant, inclusive home for human stories.</p>
+                </div>
+
+                <div class="py-5 border-bottom ps-3">
+                    <h3 class="fw-normal mb-3" style="font-family: serif;font-size: clamp(1.4rem, 2.5vw, 2.5rem);">
+                        Unlock every
+                        story</h3>
+                    <p class="text-dark fw-normal" style="font-size: larger;">Get access to millions of original stories
+                        that spark bright ideas,
+                        answer big questions, and fuel bold ambitions.</p>
+                </div>
+
+                <div class="py-5 border-bottom ps-3">
+                    <h3 class="fw-normal mb-3" style="font-family: serif;font-size: clamp(1.4rem, 2.5vw, 2.5rem);">
+                        Enhance your
+                        reading experience</h3>
+                    <p class="text-dark fw-normal" style="font-size: larger;">Immerse yourself in audio stories, read
+                        offline wherever you go, and
+                        connect with the Medium community on Mastodon.</p>
+                </div>
+
+                <div class="py-5 border-bottom ps-3">
+                    <h3 class="fw-normal mb-3" style="font-family: serif;font-size: clamp(1.4rem, 2.5vw, 2.5rem);">
+                        Elevate your
+                        writing</h3>
+                    <p class="text-dark fw-normal" style="font-size: larger;">Create and contribute to publications,
+                        create a custom domain for
+                        your profile, and level up your writing with our simple but powerful publishing tools.</p>
+                </div>
+
+                <div class="py-5 ps-3">
+                    <h3 class="fw-normal mb-3" style="font-family: serif;font-size: clamp(1.4rem, 2.5vw, 2.5rem);">
+                        Support a
+                        mission that matters</h3>
+                    <p class="text-dark fw-normal" style="font-size: larger;">Members are creating a world where
+                        original, human-crafted stories
+                        thrive. Quality comes first, not ads or clickbait.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------->
+    <div class="container-fluid px-3 border-bottom border-dark border-opacity-75 bg-white">
+        <div class="row">
+
+            <!-- STICKY LEFT -->
+            <div class="col-12 col-sm-4">
+                <div class="sticky-top py-5 ps-3 sticky-text">
+                    <h2 class="fw-normal" style="font-family: serif; font-size: clamp(1.8rem, 3vw, 3.2rem);">What
+                        members are saying</h2>
+                    <hr class="border-2 border-dark d-block d-md-none">
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-12 col-sm-8">
+
+                <div class="d-flex gap-3 py-5 border-bottom">
+                    <img class="rounded-circle flex-shrink-0" style="width: 80px; height: 80px; object-fit: cover;"
+                        src="https://hai.stanford.edu/_next/image?url=https%3A%2F%2Fhai.stanford.edu%2Fassets%2Fimages%2Favatars%2FAurum-Speakers-Bureau-Andrew-Ng.jpg&w=3840&q=100"
+                        alt="Icon">
+                    <div>
+                        <p class="text-dark fw-normal m-0 mb-3" style="font-size: larger;">The easy path in social media
+                            is
+                            promoting the worst content, the cheapest, tackiest, lowest-effort stuff. That's not what
+                            you
+                            get on Medium. You can actually find content you can build your brain with. I appreciate
+                            that,
+                            both as a reader and a writer.</p>
+                        <p class="m-0 small"><strong>Andrew Ng,</strong> Chief Decision Scientist at Google and
+                            Medium member</p>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 py-5 border-bottom">
+                    <img class="rounded-circle flex-shrink-0" style="width: 80px; height: 80px; object-fit: cover;"
+                        src="https://images.fastcompany.com/image/upload/f_webp,c_fit,w_256,q_auto/wp-cms-2/2025/10/Enrique-Dans_grey_500x500.jpg"
+                        alt="Icon">
+                    <div>
+                        <p class="text-dark fw-normal m-0 mb-3" style="font-size: larger;">Medium has proved a
+                            game-changer
+                            for
+                            me, and quickly became the subscription I value the most, and I have quite a few. The cost
+                            is
+                            nothing compared to the value Medium generates for me month after month.</p>
+                        <p class="m-0 small"><strong>Enrique Dans,</strong> Professor of Innovation at IE Business
+                            School and Medium member</p>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 py-5">
+                    <img class="rounded-circle flex-shrink-0" style="width: 80px; height: 80px; object-fit: cover;"
+                        src="https://developer-blogs.nvidia.com/wp-content/uploads/2025/05/wenqi-glantz-270x270.jpg"
+                        alt="Icon">
+                    <div>
+                        <p class="text-dark fw-normal m-0 mb-3" style="font-size: larger;">For us tech folks, Medium
+                            membership
+                            unlocks a whole treasure trove of high-quality articles. One good technology book could sell
+                            for
+                            over the Medium membership fee amount. Investing in a Medium membership is one of the best
+                            investments I have ever made for my career.</p>
+                        <p class="m-0 small"><strong>Wenqi Glantz,</strong> Software Architect at ArisGlobal and Medium
+                            member</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------->
+    <div class="container-fluid px-3 bg-white mb-5">
+        <div class="row">
+
+            <!-- STICKY SOL -->
+            <div class="col-12 col-sm-4">
+                <div class="sticky-top py-5 ps-3 sticky-text">
+                    <h2 class="fw-normal" style="font-family: serif; font-size: clamp(1.8rem, 3vw, 3.2rem);">Membership
+                        plans</h2>
+                    <hr class="border-2 border-dark d-block d-md-none">
+                </div>
+            </div>
+
+            <!-- KARTLAR -->
+            <div class="col-12 col-sm-5">
+                <div class="row g-4 pt-5">
+
+                    <!-- Medium Member -->
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded-3 p-4 text-center h-100">
+                            <i class="fa-solid fa-star fa-2x mb-3" style="color: #f4b942;"></i>
+                            <h2 class="fw-bold mt-3">Medium Member</h2>
+                            <p class="text-muted">$5/month or $50/year</p>
+                            <button class="btn w-100 rounded-pill py-2 mb-4 text-white fw-bold"
+                                style="background-color: #1a8917;" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Get started</button>
+                            <hr>
+                            <ul class="list-unstyled text-start">
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Read
+                                    member-only stories</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Support
+                                    writers you read most</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Listen to
+                                    audio narrations</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Read
+                                    offline with the Medium app</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Access
+                                    our Mastodon community</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Connect
+                                    your custom domain</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Create
+                                    your own publications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Friend of Medium -->
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded-3 p-4 text-center h-100">
+                            <i class="fa-solid fa-heart-circle-check fa-2x mb-3" style="color: #f4b942;"></i>
+                            <h2 class="fw-bold mt-3">Friend of Medium</h2>
+                            <p class="text-muted">$15/month or $150/year</p>
+                            <button class="btn w-100 rounded-pill py-2 mb-4 text-white fw-bold"
+                                style="background-color: #1a8917;" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Get started</button>
+                            <hr>
+                            <ul class="list-unstyled text-start">
+                                <li class="py-2"><i class="fa-solid fa-sparkles me-2" style="color: #f4b942;"></i>All
+                                    Medium member benefits</li>
+                            </ul>
+                            <div class="d-flex align-items-center gap-2 my-2">
+                                <hr class="flex-grow-1">
+                                <span class="text-muted small">PLUS</span>
+                                <hr class="flex-grow-1">
+                            </div>
+                            <ul class="list-unstyled text-start">
+                                <li class="py-2"><i class="fa-solid fa-check me-2"
+                                        style="color: #1a8917;"></i><strong>Give 4x more to the writers you
+                                        read</strong></li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Share
+                                    member-only stories with anyone and drive more earnings for writers</li>
+                                <li class="py-2"><i class="fa-solid fa-check me-2" style="color: #1a8917;"></i>Customize
+                                    app icon</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+
+    <!-- last content -->
+    <div class="container-fluid border-dark border-top border-opacity-75 last-content p-5 text-black">
+        <div class="container align-items-center justify-content-center d-flex flex-column">
+            <h1 class="mt-3" style="font-family: serif; font-size: clamp(1.8rem, 3vw, 3.2rem);">Unlock a world of wisdom
+            </h1>
+            <button class="btn btn-dark btn-sm rounded-pill px-3 text-center mt-5 mb-2 py-2" data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+                Get Started
+            </button>
+        </div>
+    </div>
+    <!-- last content end -->
+    <!-- footer -->
+    <div class="container-fluid bg-body">
+        <footer class="py-3 d-flex" style="margin-top: -16px;">
+            <a class="navbar-brand fw-bolder fs-3 mx-3" href="index.html">Medium</a>
+            <ul class="nav justify-content-center align-items-center ms-auto" style="font-size: 10px;">
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">About</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Terms</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Privacy</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Help</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Teams</a></li>
+                <li class="nav-item text-light"><a href="#" class="nav-link px-1 text-body-secondary">Press</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- footer end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4 text-center border-0 shadow-lg" style="border-radius: 15px;">
+
+                <div class="text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h2 class="fw-serif mb-5 mt-3">Welcome back.</h2>
+
+                    <div class="d-grid gap-3 mx-auto" style="max-width: 320px;">
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-google me-3 text-danger"></i> Sign in with Google
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-facebook me-3 text-primary"></i> Sign in with Facebook
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-apple me-3"></i> Sign in with Apple
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fab fa-x-twitter me-3"></i> Sign in with X
+                        </button>
+
+                        <button class="btn btn-outline-dark rounded-pill py-2 text-start px-4">
+                            <i class="fa-regular fa-envelope me-3"></i> Sign in with email
+                        </button>
+
+                    </div>
+
+                    <p class="mt-5 small text-muted">
+                        No account? <a href="#" class="text-success fw-bold text-decoration-none">Create one</a>
+                    </p>
+                    <p class="small text-muted mt-2">
+                        Forgot email or trouble signing in? <a href="#" class="text-secondary text-decoration-none">Get
+                            help</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
